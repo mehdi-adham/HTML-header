@@ -1,0 +1,129 @@
+@font-face {
+  font-family: sahel;
+  src: url("fonts/sahel/Sahel.eot");
+  src: url("fonts/sahel/Sahel.eot?#iefix") format("FontName-opentype"),
+    url("fonts/sahel/Sahel.woff") format("woff"),
+    url("fonts/sahel/Sahel.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Sahel-FD;
+  src: url(fonts/sahel/FD/Sahel-FD.woff);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --card-radius: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sahel, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  direction: rtl;
+  display: flex;
+  background-color: #f9f9f9;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+a:hover {
+  color: #428bca !important;
+}
+.container {
+  /* padding: 1.5rem 6px;*/
+}
+
+.flex-dr-ac {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flex-sb {
+  justify-content: space-between;
+}
+.b-w {
+  background-color: white;
+}
+
+/* header */
+header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+header a {
+  color: unset;
+}
+/* nav*/
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  column-gap: 6px;
+  background-color: aquamarine;
+}
+nav ul > li {
+  list-style: none;
+  background-color: bisque;
+}
+nav ul > li > a {
+  display: block;
+  height: 100%;
+  padding: 12px;
+}
+
+/* Device View */
+@media screen and (max-width: 500px) {
+}
+@media screen and (max-width: 950px) {
+  .container {
+    width: 100%;
+  }
+}
+/*  1024x768  */
+@media screen and (min-width: 1000px) {
+  .container {
+    max-width: 1000px;
+    min-width: 1000px;
+  }
+}
+/*  1280x768 | 1256x768*/
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    min-width: 1200px;
+  }
+}
+/*  1366x768  */
+@media screen and (min-width: 1300px) {
+  .container {
+    max-width: 1300px;
+    min-width: 1300px;
+  }
+}
+/*  1420x768  */
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+    min-width: 1400px;
+  }
+}
